@@ -1,0 +1,68 @@
+@media screen and (min-width: 500px){
+    header{    
+      color: white;
+      display: block;
+     align-items: center;
+     
+      text-align: center;
+    }
+    header img{
+        box-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+        
+    }
+    header span{
+        margin: 2rem;
+        font-size: 20pt;
+    }
+
+
+    nav {
+      display: flex;
+        
+    }
+    nav a {
+      flex: 1 1 100%;
+
+    }
+    
+    #parent{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+      
+    .card{
+        box-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+    }
+   
+
+      
+    
+    main h1{
+        
+        text-align: left;
+        font-size: 160%;
+    }
+
+  
+
+    footer p{
+        display: block;
+        text-align: center;
+        font-size: 120%;
+      }
+    .footerFirstP {
+        font-size: 15pt;
+    }
+
+
+    #lastModified{
+        font-size: small;
+        margin-top: 0.5rem;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+
+        
+    }
+    
+}
+  

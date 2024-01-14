@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+  }
+
+body{
+    font-family: 'Roboto Slab', serif;
+  color: #042245;
+ 
+}
+
+/*Mobile views*/
+
+header, main, footer{
+    max-width: 640%;
+     
+    padding: 0.5rem;
+}
+
+nav{
+    background-color: #D8D88F;
+
+}
+nav a {
+    display: grid;
+    justify-content:center;
+    padding: 1rem;
+    text-decoration: none;
+  color:#364511;
+  }
+
+
+nav #active{
+    background-color: rgba(255, 255,200, 0.5);
+  color: #b36e15;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header, footer{  
+    
+    background-color: #8DA242;
+    padding: 1rem;
+       
+}
+
+
+main h1{
+    font-size: 110%;
+    
+    text-align: center;
+    text-decoration: underline;
+    padding: 1rem;
+    
+}
+
+.card h2{
+        background-color: #8DA242;
+
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.card{
+    color: #042245;  
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+ul{
+  margin: 1rem;
+  
+}
+
+ul, li  {
+    
+    color: #042245;
+    font-size: 90%;
+    margin: 3%;
+   
+}
+
+.card p{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/* header{
+    display: flex;
+     */
+
+
+header span{
+    font-size: 18pt;    
+    
+  vertical-align:middle; /*this will make the span respond to moving up or down */
+ padding-bottom: 5rem;
+  font-family: 'Lemon', serif;
+}
+
+footer p{
+  display: block;
+  text-align: center;
+  font-size: 120%;
+}
+.footerFirstP {
+    font-size: 18pt;
+    
+}
+
+
+.footerFirstP {
+    font-size: 15pt;
+    
+}
+#lastModified{
+    font-size: small;
+        margin-top: 0.5rem;
+        color: rgb(255, 255, 255);
+        /* text-shadow: rgb(20, 9, 9) 0.5px 2px 8px; */
+        text-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+        
+
+}
+
