@@ -4,34 +4,34 @@
     box-sizing: border-box;
     
     
+    
   }
 
 body{
     font-family: 'Roboto Slab', serif;
-  color: #042245;
+  /* color: #042245; */
  
 }
 
 /*Mobile views*/
 
 header, main, footer{
-    max-width: 640%;
-     
+    max-width: 640%;     
     padding: 0.5rem;
 }
 
-nav{
+/* nav{
     background-color: #D8D88F;
 
-}
-nav a {
+} */
+/* nav a {
     display: grid;
     justify-content:center;
     padding: 1rem;
     text-decoration: none;
   color:#364511;
-  }
-
+  } */
+/* 
 
 nav #active{
     background-color: rgba(255, 255,200, 0.5);
@@ -40,7 +40,7 @@ nav #active{
 
 nav a:hover{
     background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 header, footer{  
     
@@ -76,18 +76,24 @@ main h1{
     overflow: hidden;
 
 }
-ul{
+.card ul{
   margin: 1rem;
   
 }
 
-ul, li  {
+.card ul li  {
     
     color: #042245;
     font-size: 90%;
     margin: 3%;
    
 }
+.card ul li a{
+    text-decoration: none;
+    color: #58290a;
+}
+
+
 
 .card p{
     padding: 1rem;
@@ -119,18 +125,119 @@ footer p{
     
 }
 
-
 .footerFirstP {
     font-size: 15pt;
     
 }
 #lastModified{
     font-size: small;
-        margin-top: 0.5rem;
-        color: #1a2e05;
+    margin-top: 0.5rem;
+    color: #1a2e05;
         /* text-shadow: rgb(20, 9, 9) 0.5px 2px 8px; */
-        text-shadow: rgb(255, 255, 255) 0.5px 2px 8px;
-        
+    text-shadow: rgb(255, 255, 255) 0.5px 2px 8px;
+      
 
 }
 
+/*Responsive Ambuger menue*/
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 9rem;
+	left: 1rem;
+	
+}
+
+#menu::before {
+	content: "☰";
+    color: #8DA242;
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.myNav {
+	
+    /* flex-direction: row; */
+   
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.myNav li {
+	display: none;
+}
+.myNav li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.myNav li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+
+
+.open.myNav li {
+	display: block;
+	width: 100%;
+}
+.open.myNav li a {
+	display: block;
+}
+
+#active::before {
+	content: "📍 ";
+}
+
+
+/* making a dark mode */
+.background{
+    background-color: rgba(14, 30, 10, 120);
+     
+    padding: 2rem;
+    max-width: 100%;
+}
+
+#darktheme{
+    position: absolute ;
+   	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+    
+    
+
+}
+#darkthem{
+    background-color:none;    
+    
+
+    
+}
+firstNav{
+    background-color: none;
+}
+
+/* #darktheme::before {
+	content: ".contrast-svgrepo-com";
+    color: #8DA242;
+} */
+
+
+
+/* .dark.main{
+    background-color: #000;
+} */

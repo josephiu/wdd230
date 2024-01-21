@@ -14,3 +14,74 @@ const options = {
 
   document.querySelector("#lastModified").textContent = `Last Modified: ${oLastModif}.`;
 
+
+  /*making the ammbuger menue*/
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.myNav');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+
+
+// making a dark mode them
+
+
+
+const modeButton = document.querySelector("#darktheme");
+const main = document.querySelector("main");
+// const aandp = document.querySelector("section");
+const aandp = document.querySelector(".card");
+const si = document.querySelector("#card2");
+
+
+
+
+
+
+
+modeButton.addEventListener("click", () => {
+	if(main.classList.toggle('dark')){
+    main.style.background = "#000";
+    main.style.color = "#fff";
+    aandp.style.backgroundColor = "#f7f4e6";
+    si.style.backgroundColor = "#f7f4e6";
+
+    
+
+
+  
+
+   
+  }
+  else {
+    main.style.background = "#eee";
+    main.style.color = "#000"; 
+    
+    aandp.style.backgroundColor = "white";
+    si.style.backgroundColor = "white";
+
+
+    
+
+    
+  };
+ 
+	
+});
+
+// modeButton.addEventListener("click", () => {
+// 	if (modeButton.textContent.includes("🕶️")) {
+// 		main.style.background = "#000";
+// 		main.style.color = "#fff";
+// 		modeButton.textContent = "🔆";
+// 	} else {
+// 		main.style.background = "#eee";
+// 		main.style.color = "#000";
+//     main.
+// 		modeButton.textContent = "🕶️";
+// 	}
+// });
