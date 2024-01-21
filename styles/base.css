@@ -127,9 +127,9 @@ footer p{
 #lastModified{
     font-size: small;
         margin-top: 0.5rem;
-        color: rgb(255, 255, 255);
+        color: #1a2e05;
         /* text-shadow: rgb(20, 9, 9) 0.5px 2px 8px; */
-        text-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+        text-shadow: rgb(255, 255, 255) 0.5px 2px 8px;
         
 
 }
