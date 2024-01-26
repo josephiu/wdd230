@@ -1,0 +1,72 @@
+@media screen and (min-width: 500px){
+    header{    
+      color: #1a2e05;
+      display: block;
+      align-items: center;     
+     
+      text-align: center;
+    }
+    /* header img{
+        box-shadow: rgb(20, 9, 9) 0.5px 2px 8px; */
+
+    
+    /* header span{
+        margin: 2rem;
+        font-size: 20pt; */
+    
+#h1text{
+    text-align: center;
+}              
+       
+ 
+  
+    .menu{
+      display: none;
+      
+    }
+    .menu-inside{
+      display: flex;
+      
+    }
+    .menu-inside li { 
+      display: block;
+      flex: 1 1 100%;      
+      
+    }
+
+
+    .menu-inside li a { 
+        display: block;
+        padding: 2rem;
+           
+    
+      }
+
+
+
+    
+    .sevices1{
+      display: flex;
+    }
+      
+    .sevices1 section{
+        box-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
+    }
+
+.eventflex section{
+       padding: 2px;
+       gap: 2rem;
+    }
+    
+        
+#events img{  
+        padding-top: 2rem;
+        display: block;
+        width: 100%;
+
+}
+
+.eventflex{
+        display: flex;
+}
+
