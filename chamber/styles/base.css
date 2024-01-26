@@ -32,7 +32,7 @@ header, main, footer{
 
 .menu-inside{
     display: block;
-    background-color:#0d90ad;
+    background-color:#041f25;
    
       
       
@@ -112,7 +112,7 @@ header, main, footer{
 
   }
   #btn1{
-    background-color: DodgerBlue; /* Blue background */
+    background-color: rgb(5, 2, 49); /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
     padding: 12px 16px; /* Some padding */
@@ -121,6 +121,17 @@ header, main, footer{
     position: absolute;
     right:1rem;
   }
+
+ #btn1:hover {
+    background-color: #404ada;
+    color: var(--secondry-color);
+    font-weight:700;
+    padding-right: 2rem;
+  }
+
+
+
+
   
   main{
     background-color: #e1b382;

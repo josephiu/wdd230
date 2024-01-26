@@ -2,18 +2,22 @@
     header{    
       color: #1a2e05;
       display: block;
-      align-items: center;     
+      align-items: center;    
      
-      text-align: center;
+      
     }
     /* header img{
         box-shadow: rgb(20, 9, 9) 0.5px 2px 8px; */
 
-    
-    /* header span{
-        margin: 2rem;
-        font-size: 20pt; */
-    
+   
+    #first-header {
+         padding: 2rem;
+    }
+    #first-header h2{
+      font-size: 15pt;
+    }
+
+   
 #h1text{
     text-align: center;
 }              
@@ -30,14 +34,15 @@
     }
     .menu-inside li { 
       display: block;
-      flex: 1 1 100%;      
+      flex: 1 1 100%; 
+         
       
     }
 
 
     .menu-inside li a { 
         display: block;
-        padding: 2rem;
+        padding: 1rem;
            
     
       }
@@ -70,3 +75,6 @@
         display: flex;
 }
 
+footer{
+  padding: 2rem;
+}
