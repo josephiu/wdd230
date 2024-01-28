@@ -1,19 +1,25 @@
 @media screen and (min-width: 500px){
-    header{    
-      color: #1a2e05;
-      display: block;
-      align-items: center;     
+    
+    
+    .profileparent{
+      display: flex;
+      flex-direction: row;
+    }
+    .profileparent img{
+    
+      margin-left: 30%;
+    }
+
+    .profileparent p{
+      position: absolute;
+      text-align: justify;
+    
+
+    padding-top: 14%;
+    padding-left: 45%;
      
-      text-align: center;
     }
-    header img{
-        box-shadow: rgb(20, 9, 9) 0.5px 2px 8px;
-        
-    }
-    header span{
-        margin: 2rem;
-        font-size: 20pt;
-    }
+
 
   
     #menu{
@@ -69,6 +75,10 @@
       display: none;
       color: white;
    
+  }
+
+  #mapcard{
+    height: 500px;
   }
   
     

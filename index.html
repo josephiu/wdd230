@@ -8,7 +8,7 @@
     <meta name="author" content="[Joseph Israel Uchenna]">
 
     <meta property="og:title" content="Joseph Israel - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:description" content="Joseph Israel Uchenna WDD 230 - Web Frontend Development course assignment Portal.">
     <meta property="og:image" content="https://www.searchenginejournal.com/wp-content/uploads/2020/01/which-web-design-platform-is-right-for-you-5e4d59fb941b9.png">
     <meta property="og:url" content="https://josephiu.github.io/wdd230">
@@ -27,13 +27,15 @@
 
 </head>
 <body>
-    <header>        
-        <img src="images/profile.jpg" alt="A picture image of Joseph" width="75" height="100">        
-        <span>Joseph Israel Uchenna</span>
+    <header> 
+        <div class="profileparent">   
+            <img src="images/profile-1.webp" alt="An image of Joseph" loading="lazy" width="188" height="266">        
+            <p>Joseph Israel Uchenna</p>
+        </div>  
     </header>
      
     <nav id="firstNav">
-        <nav class="background"></nav>
+        
         <button id="darktheme"><img src="images/contrast-svgrepo-com.svg" alt="darkmode-icon" width="30"></button>
         
          <button id="menu"></button>
@@ -45,6 +47,17 @@
         </ul>
     </nav>
     <main>
+        <div id="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-large.webp" alt="Aba Nigeria Temple" loading="lazy" width="1500" height="750">
+            </picture>
+            <div id="labelforhero">
+                <p>Aba Nigeria Temple</p>
+            </div>
+        </div>
+        
         <h1>WDD 230: Web Frontend Development</h1>
 
         <div id="parent">
@@ -52,8 +65,8 @@
                 <h2>Learning Activities</h2>
                 <ul>
                 <li>Week 01: <a href="#">Learning</a> | <a href="#">Team Activity</a> | <a href="#">Project</a></li>
-                <li>Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/josephiu/pen/eYXgxpe">Design Principle - Hamburger Menu</a> | <a href="#">Project</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="#">Project</a></li>
+                <li>Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/josephiu/pen/eYXgxpe">Hamburger Menu</a> 
+                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">BOM</a></li>
                 <li>Week 04: <a href="#">Learning</a> | <a href="#">Team Activity</a> | <a href="#">Project</a></li>
                 <li>Week 06: <a href="#">Learning</a> | <a href="#">Team Activity</a> | <a href="#">Project</a></li>
                          
@@ -63,10 +76,24 @@
             <h2>Information</h2>
             <p> Abu Dhabi City, UAE</p>
             <p> 🌄36°f - Sunshine</p>
-            <p> Page Visits: 15 </p>         
-                            
-            </section>
+
+            <!-- Dynamically populating the span element with the number of visit from the locastorage -->
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+             </section>
+                               
+            
+
         </div>
+
+        <div id="map">
+            <section class="mapcard">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9724.081665282387!2d7.281268865738619!3d5.404501630530354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042edbc7b386855%3A0x6f82152e58152065!2sLorji%2C%20Imo%2C%20Nigeria!5e0!3m2!1sen!2sae!4v1706473061447!5m2!1sen!2sae" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+            </section>
+            
+         
+        </div>
+
     </main>
     <footer>
       <p class="footerFirstP"> &copy;<span id="year"></span>      
