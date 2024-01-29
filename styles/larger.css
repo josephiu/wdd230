@@ -13,6 +13,9 @@
     .profileparent h2{
      
       align:left;
+        flex: 1/2;
+    
+    
  
      
     }
