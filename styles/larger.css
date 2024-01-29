@@ -3,6 +3,8 @@
     
     .profileparent{
       display: flex;
+        marging:none;
+        padding: none
      
     }
    /* .profileparent img{
