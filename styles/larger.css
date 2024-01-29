@@ -10,9 +10,9 @@
       margin-left: 30%;
     }
 
-    .profileparent p{
+    .profileparent h2{
       position: absolute;
-      text-align: justify;
+      align-items:center
     
 
     padding-top: 14%;
