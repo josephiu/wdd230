@@ -69,9 +69,6 @@ header, footer{
 
 
 
-
-
-
 main h1{
     font-size: 110%;
     
@@ -281,8 +278,28 @@ footer p{
 }
 
 
-#map{
-    padding:1rem;
-    
+.mapcard{
+    overflow:hidden;
+
+    /* padding-bottom:25%;  */
+
+    position:relative;
+    height: 300px;
+
+   
 }
 
+
+.mapcard iframe{
+
+    left:0;
+
+    top:0;
+
+    height: 100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
