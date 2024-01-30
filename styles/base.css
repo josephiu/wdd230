@@ -303,3 +303,31 @@ footer p{
     position:absolute;
 
 }
+
+
+/* discovery page css update */
+
+
+.major-grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+} 
+
+
+.major-grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  
+  photo-galary{
+    display: block;
+    
+  }
+
+
+ 
