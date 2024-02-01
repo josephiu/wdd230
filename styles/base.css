@@ -309,25 +309,70 @@ footer p{
 
 
 .major-grid{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: block;
+   
     grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
+  background-color: transparent;
 } 
 
 
 .major-grid > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+    background-color: transparent;
+  
+    font-size: 20px; 
+   
+    
   }
   
+.sidebar section{
+    padding: 2rem;
+    background-color: burlywood;
+    gap: 3rem;  
+    margin-bottom: 1rem;      
+
+
+}
+
+.sidebar section h3{
+    padding-bottom: 1rem;
+    color: #13350e;
+}
+
+.sidebar section img{
+    
+    text-shadow: 2px 12px  5px black;
+
+}
+
+
+.sidebar1{
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+
+
+
   photo-galary{
-    display: block;
+    display: block; 
+    
     
   }
 
+ .photo-galary  section h3{
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  section img{
+    width: 100%;
+    height: auto;
+  }
 
  

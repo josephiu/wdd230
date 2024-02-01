@@ -89,7 +89,18 @@
   #mapcard{
     height: 500px;
   }
+
+  /* discovery page css update */
+
+  .major-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 80%;
+    margin-left: 10%;
+
+
+  }
+
   
     
 }
-  
