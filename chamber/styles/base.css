@@ -47,7 +47,6 @@ header, main, footer{
 
 
 
-
 .menu {
     font-size: 1.3rem;
     /* border-right: 1px solid rgba(0,0,0,.3); */
@@ -111,6 +110,12 @@ header, main, footer{
 
 
   }
+  .largeimage picture img{
+    display: block;
+    width: 100%;
+  }
+
+
   #btn1{
     background-color: rgb(5, 2, 49); /* Blue background */
     border: none; /* Remove borders */
@@ -331,3 +336,85 @@ footer{
 
 }
 
+/* discovery page css update */
+
+
+.major-grid{
+  display: block;
+ 
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  background-color: transparent;
+} 
+
+
+.major-grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background-color: transparent;
+
+  font-size: 20px; 
+ 
+  
+}
+
+.sidebar section{
+  padding: 2rem;
+  background-color: burlywood;
+  gap: 3rem;  
+  margin-bottom: 1rem;      
+
+
+}
+
+.sidebar section h3{
+  padding-bottom: 1rem;
+  color: #13350e;
+}
+
+.sidebar section img{
+  
+  text-shadow: 2px 12px  5px black;
+
+}
+
+
+.sidebar1{
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+
+
+
+.photo-galary{
+  display: block; 
+  
+  
+}
+
+.photo-galary  section h3{
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+
+.photo-galary section img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.sidebar section img{
+  width: 100%;
+  height: auto;
+ 
+
+}
+
+.sidebar section p{
+  font-size: 15pt;
+}
