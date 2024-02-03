@@ -337,6 +337,12 @@ footer{
 }
 
 /* discovery page css update */
+.h1big h1{
+  font-family: 'Inter', sans-serif;
+  color: #032b15;
+  font-weight: bolder;
+  
+}
 
 
 .major-grid{
