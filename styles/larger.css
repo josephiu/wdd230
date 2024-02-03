@@ -101,6 +101,11 @@
 
   }
 
+  /* rounded corners - boxmodel */
+  .photo-galary section img:hover {border-radius: 15px 150px;}
+
+  .major-grid section img:hover{opacity: .5;}
+
   
     
 }
