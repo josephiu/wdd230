@@ -1,0 +1,83 @@
+:root {
+	--back: rgb(20, 54, 37);
+  --back2: hsla(150, 71%, 15%, 0.5);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0, 0%, 8%, 0.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+
+
+
+}
+
+
+
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+
+}
+
+table{
+    margin: 10px auto;
+    
+    border-collapse: collapse;
+    
+}
+
+caption{
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--foredark);
+    font-size:  12pt;
+}
+
+
+thead tr:nth-child(2) {
+    background-color: var(--back);
+    color: var(--forelight);
+
+}
+
+
+
+
+
+thead  {
+    background-color: black;
+    color: var(--forelight);
+
+}
+
+
+
+
+th, td {
+    padding: 7px 15px;
+
+}
+
+
+
+
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(182, 192, 202);
+}
+
+
+
+
+
