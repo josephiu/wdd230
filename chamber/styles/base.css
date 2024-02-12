@@ -424,3 +424,84 @@ footer{
 .sidebar section p{
   font-size: 15pt;
 }
+
+
+
+
+/*-------join------*/
+
+
+
+form{
+  margin: 1rem;
+  border: solid 0.3rem rgb(88, 109, 88);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+form fieldset{
+  margin-top: 1rem;
+  border: solid 0.1rem rgb(88, 109, 88);
+  border-radius: 0.5rem;      
+}
+
+legend{
+  color:#1a2e05;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+ }
+
+.section1, .section2{
+  display: block;
+  padding-top: 1rem;
+  color: rgb(15, 12, 3);    
+}
+
+.section2 input, .section1 input{
+  display: block;
+  font-size: 1rem;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 0.5rem;
+  /* width: 100%; */
+  max-width: 20rem;
+  background-color: aliceblue;
+
+}
+
+fieldset div div p{
+  text-align: justify;
+  max-width: 500px;
+  font-size: 9pt;
+  padding: 0.3rem 0 0 0 ;
+  color: #000000;
+}
+
+fieldset div{
+  background-color: #f8fae9;
+  padding: 0 0.3rem 0.3rem ;
+  margin-bottom: 0.5rem;
+
+}
+
+fieldset div h4{
+  color: #264900;
+}
+
+
+form #signup {
+  border: none;
+  background-color: rgb(16, 41, 8);
+  color:white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;    
+  margin: 2rem 0 0 0 ;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.5rem;
+
+}
+
+
+  

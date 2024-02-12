@@ -120,11 +120,30 @@
 
   /* ////--JOIN--/// */
 
-  .kard1 {
-    display: flex;
+  .kard1, .kard2, .kard3, .kard4 {
+    display: grid;
+    grid-template-columns: 20% 50%;
     
 
   }
+
+  fieldset div div p{
+    font-size: 12pt;
+    text-align: left;
+    
+
+  }
+
+ fieldset .rightside1, fieldset.rightside2, fieldset .rightside3, fieldset .rightside4  {
+   
+    padding-top: 1rem;
+    
+
+  }
+
+
+
+
 }
 
 
