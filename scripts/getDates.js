@@ -41,10 +41,6 @@ const map = document.querySelector("#map");
 
 
 
-
-
-
-
 modeButton.addEventListener("click", () => {
 	if(main.classList.toggle('dark')){
     main.style.background = "#000";
@@ -52,11 +48,6 @@ modeButton.addEventListener("click", () => {
     aandp.style.backgroundColor = "#f7f4e6";
     si.style.backgroundColor = "#f7f4e6";
     map.style.backgroundColor = "black";
-
-    
-
-    
-
 
   
 
@@ -100,5 +91,7 @@ numVisit++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+
 
 

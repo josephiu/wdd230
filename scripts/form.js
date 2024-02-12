@@ -2,8 +2,8 @@
 
 /*for password*/
 
-const password1 = document.querySelector("#password1");
-const password2 = document.querySelector("#password2");
+const password1 = document.querySelector(".password1");
+const password2 = document.querySelector(".password2");
 const message = document.querySelector("#passwordMessage");
 
 
