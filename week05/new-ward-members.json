@@ -1,0 +1,51 @@
+{
+    "theFamilyName": "Joseph Uchenna Family",
+    "dateTheFamilyMovedIntoTheWard": "September 18th 2024",
+    "numberOfPeopleIntheFamily": 5,
+    "VisitedByBishopric": true,
+    "IndividualFamilyMembers": [
+        {
+            "name": "Sarah",
+            "gender": "Female",
+            "birthday":"20, September, 2025"
+            
+        },
+        {
+            "name": "kelvin",
+            "gender": "male",
+            "birthday":"26, September, 2028"
+
+            
+        },
+
+        {
+            "name": "David",
+            "gender": "Male",
+            "birthday":"20, August 2030"
+            
+        },
+
+        {
+            "name": "Brooke",
+            "gender": "Female",
+            "birthday":"20, September, 1993"
+
+            
+        },
+        {
+            "name": "Joseph uchenna Israel",
+            "gender": "Female",
+            "birthday":"15, March, 1993"
+
+            
+        }
+
+
+
+
+    ]
+
+
+    
+}
+
