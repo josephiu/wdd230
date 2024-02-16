@@ -85,12 +85,101 @@ if (numVisits !== 0) {
 }
 
 // 4️⃣ increment the number of visits by one.
-numVisit++;
+numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+
+
+
+// ADDING WEATHER DYNAMICALLY USING THIRD PARTY WEATHER API
+
+
+const cards = document.querySelector(".cards");
+
+
+
+
+const cityName= document.createElement("p");
+const description = document.createElement("p");
+const curentWeather = document.createElement("p");
+const currentTemp = document.createElement("p");
+const weatheIcon = document.createElement("img");
+
+
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=24.44&lon=54.37&units=imperial&appid=17bec3e286d041d570e41d41ce1bd59f"
+
+async function apiFecth() {
+    try {             
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            //  console.log(data); // this will test it to the browser inspector console
+             displayResults(data);
+
+        }else {
+            throw Error(await response.text());
+        }
+
+   } catch(error) {
+
+    console.log(error);
+   }
+
+}
+apiFecth()
+
+function displayResults(data) {
+    
+  cityName.innerHTML = `${data.name} City, AE`;
+
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let desc = data.weather[0].description;
+    weatheIcon.setAttribute("src",iconsrc);
+    weatheIcon.setAttribute("alt", "image of day weather");
+    description.textContent = `${desc}`;
+
+        
+    cards.appendChild(cityName);    
+    cards.appendChild(weatheIcon);    
+    cards.appendChild(currentTemp); 
+    cards.appendChild(description);  
+
+
+}
+
+// //dynamically displaying my course card from jason
+
+// const week1 = document.querySelector(".w1");
+// const week2 = document.querySelector(".w2");
+// const week3 = document.querySelector(".w3");
+// const week4 = document.querySelector(".w4");
+// const week5 = document.querySelector(".w5");
+
+// fetch("data/links.json")
+// // promise telling the computer to pass to json
+// .then(response => response.json())
+// .then(data => {
+//   console.log(data);
+//   week1.innerHTML = ` ${data.weeks[0].links[0].url}`;
+
+
+
+
+// })
+
+
+
+
+
+
+
+
+
 
 
 
