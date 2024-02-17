@@ -103,21 +103,18 @@ main h1{
 .card ul li  {
     
     color: #042245;
-    font-size: 90%;
+    font-size: 15pt;
     margin: 3%;
    
 }
 .card ul li a{
     text-decoration: none;
     color: #58290a;
+    font-size: 15pt;
 }
 
 
 
-.card p{
-    padding: 1rem;
-    text-align: center;
-}
 
 
 
@@ -288,9 +285,17 @@ footer p{
 
    
 }
+.mapcard h2{
+    text-align: center;  
+    padding: 0.5rem;
+    background-color: #093b22;
+    color: #8DA242;
+    
+}
 
 
 .mapcard iframe{
+    padding-top: 3rem;
 
     left:0;
 
@@ -304,12 +309,65 @@ footer p{
 
 }
 
+.cards{
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    
+
+}
+
+
+.card h4{
+    padding-top: 20px;
+    grid-column: span 2;    
+    grid-row: span 1;
+
+    font-size: 16pt;
+    margin-left: auto;
+    margin-right: auto;
+    color: #525251;
+    
+}
+
 
 .card img{
-     
-    
-   }
+    grid-column: span 1;    
+    grid-row: span 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+      
+}
 
+.cards h5{
+    font-size: 20pt;
+    align-items: center;
+    color: #525251;
+       
+}
+
+
+.card span{
+    color: #093b22;   
+}
+  
+#visi{
+    text-align: center;
+    grid-column: span 2; 
+    font-size: 16pt; 
+    padding-bottom: 20px;
+
+
+}
+
+/* .card p{
+    padding: 1rem;
+    text-align: center;
+} */
 
 
 

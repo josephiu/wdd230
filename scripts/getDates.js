@@ -103,10 +103,10 @@ const cards = document.querySelector(".cards");
 
 
 
-const cityName= document.createElement("p");
-const description = document.createElement("p");
-const curentWeather = document.createElement("p");
-const currentTemp = document.createElement("p");
+const cityName= document.createElement("h4");
+const description = document.createElement("span");
+
+const currentTemp = document.createElement("h5");
 const weatheIcon = document.createElement("img");
 
 
