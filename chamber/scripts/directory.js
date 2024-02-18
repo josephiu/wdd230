@@ -11,12 +11,12 @@ const display = document.querySelector(".cards");
 //Calling the getMembersData function  in  async method using fetch
 
 async function getMembersData() {
-    const response = await fetch(url);
+    const response = await fetch(linksURL);
     const data = await response.json(); 
     //refrencing the data object of the prophet array
     // displayProphets(data.prophets);
 
-    console.log(data)  // temporary testing of data retreival
+    console.log(data.members); // temporary testing of data retreival
   
 }
   
