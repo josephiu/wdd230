@@ -17,7 +17,7 @@ getProphetData();
 
 
 
-const displayProphets = (prophets) => {
+const displayProphets  = (prophets) => {
     // card build code goes here
     prophets.forEach((prophet) => {
 
