@@ -20,7 +20,7 @@ async function getMembersData() {
     const response = await fetch(linksURL);
     const data = await response.json(); 
     //refrencing the data object of the members array                                          
-    displaymembers(data);                                                                                     
+    displayMembers(data);                                                                                     
 
     console.log(data); // temporary testing of data retreival
   
@@ -30,19 +30,20 @@ getMembersData();
 
 
 //build a display cards for each item in our members array 
-const displaymembers = (members) => {
+const displayMembers = (members) => {
 
-    members.forEach((member) => {
+    members.forEach((member) => {       
+   
 
         let card = document.createElement("section");
 
-        let cName = document.createElement("h4");
-        let cLogo = document.createElement("img");
-        let tele = document.createElement("p");
-        let yeahJoin = document.createElement("p");
-        let mLevel = document.createElement("p");
-        let address = document.createElement("p");
-        let web = document.createElement("A");
+        // let cName = document.createElement("h4");
+        // let cLogo = document.createElement("img");
+        // let tele = document.createElement("p");
+        // let yeahJoin = document.createElement("p");
+        // let mLevel = document.createElement("p");
+        // let address = document.createElement("p");
+        // let web = document.createElement("A");
 
 
 
@@ -57,7 +58,7 @@ const displaymembers = (members) => {
 
 
         //  Build the h2 content out to show the member's 
-        cName.textContent = `${member.companies[0].company_name}`; 
+        cName.textContent = member.companies[0].company_name; 
 
         card.appendChild(cName);
 

@@ -19,7 +19,9 @@ getProphetData();
 
 const displayProphets  = (prophets) => {
     // card build code goes here
-    prophets.forEach((prophet) => {
+    prophets.forEach((prophet)=> {
+        
+    
 
         let card = document.createElement("section");
         let fullName = document.createElement("h2");
