@@ -8,20 +8,25 @@ const listbutton = document.querySelector("#list");
 const display = document.querySelector(".cards");
 
 
-//Calling the getMembersData function  in  async method using fetch
+// //Calling the getMembersData function  in  async method using fetch
 
-async function getMembersData() {
-    const response = await fetch(linksURL);
-    const data = await response.json(); 
-    //refrencing the data object of the prophet array
-    // displayProphets(data.prophets);
+// async function getMembersData() {
+//     const response = await fetch(linksURL);
+//     const data = await response.json(); 
+//     //refrencing the data object of the prophet array
+//     // displayProphets(data.prophets);
 
-    console.log(data.members); // temporary testing of data retreival
+//     console.log(data); // temporary testing of data retreival
   
-}
+// }
   
-getMembersData();
+// getMembersData();
 
+
+
+fetch(linksURL)
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 
 
