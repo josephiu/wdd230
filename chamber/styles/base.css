@@ -623,7 +623,32 @@ form #signup {
 	letter-spacing: 1.1pt;
 }
 
-.head img {
-	height: 75px;
-	max-width: 100%; 
+
+
+
+
+#cardz {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+#cardz section {
+	text-align: center;
+}
+
+#cardz img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+  height: 75px;
+	max-width: 100%;
+}
+
+#cardz section > * {
+	margin: 0.1rem;
+}
+
+#cardz h3 {
+	font-family: "Caveat", cursive;
 }
