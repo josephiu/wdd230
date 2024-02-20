@@ -143,6 +143,25 @@
 
 
 
+/* grid in larg view */
+
+.cardList section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+} 
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

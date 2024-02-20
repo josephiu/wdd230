@@ -5,7 +5,7 @@ const linksURL = "https://josephiu.github.io/wdd230/data/members.json";
 
 const buttonGrid = document.querySelector("#grid");
 const buttonList= document.querySelector("#list");
-const htmlcards= document.querySelector("#cardz");
+const htmlcards= document.querySelector(".cardGrid");
 
 
 //Calling the getMembersData function  in  async method using fetch
@@ -20,7 +20,7 @@ async function getMembersData() {
     const response = await fetch(linksURL);
     const data = await response.json(); 
     //refrencing the data object of the members array                                          
-    displayMembers(data.companies);                                                                                     
+    displayMembers(data.companies);                                                                                      
 
     console.log(data.companies); // temporary testing of data retreival
   

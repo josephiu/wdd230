@@ -508,7 +508,7 @@ form #signup {
 
 
 .material-icons{
-  font-size:48px;color:red;
+  font-size:48px;color:rgb(26, 177, 20);
 
 }
 
@@ -533,34 +533,54 @@ form #signup {
 	font-family: Roboto, Helvetica, sans-serif;
 } */
 
-/* .menu {
-	margin: 1rem auto;
+#viewMenu {
+	margin: 0rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color:#2d545e;
 	text-align: center;
-} */
-/* 
-.menu button {
+} 
+
+#viewMenu button {
 	padding: 1rem;
 	font-weight: 700;
-} */
+} 
 
 #allSection {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
+	/* border: 1px solid rgba(0, 0, 0, 2); */
+	
 	background-color: #eee;
 }
+
+#allSection h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #333009;
+  color: #eee;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
 
 .cardGrid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+  padding: 1rem;
+
+  
 }
 
-.carGrid section {
+.cardGrid section {
 	text-align: center;
+  border: solid 0.1rem violet;
+ padding: 1rem;
+ box-shadow: 0 0 10px #333;
+ overflow: hidden;
+ 
+
+
 }
 
 .cardGrid img {
@@ -570,33 +590,47 @@ form #signup {
 	max-width: 100%;
 }
 
-.cardGrid section > * {
-	margin: 0.1rem;
-}
 
-.cardGrid h3 {
+
+.carGrid h3 {
 	font-family: "Caveat", cursive;
+} 
+
+.cardGrid section p{
+  text-align: center;
+  display: block;
+
+}
+#allSection h3 {
+	font-size: 1.5rem;
 }
 
-.cardList {
-	display: flex;
-	flex-direction: column;
+#allSection p {
+	font-weight: 600;
+	font-size: smaller;
 }
 
-.cardList section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+
+.carGrid section {
+	text-align: center;
+  
+  
 }
+
+
+
 
 .cardList section > * {
 	margin: 0 1rem;
+  /* margin-top: 0.5rem; */
+  padding-top: 1rem ;
+  padding-bottom: 1rem ;
+
 }
 
 .cardList section img {
 	display: none; /* smaller viewports only */
-}
+ }
 
 .cardList section h3 {
 	font-size: 1rem;
@@ -607,48 +641,9 @@ form #signup {
 	background-color: #bed;
 }
 
-#allSection h3 {
-	font-size: 1.5rem;
-}
-
-#allSection p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-#allSection a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
 
 
 
 
 
-#cardz {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
-}
 
-#cardz section {
-	text-align: center;
-}
-
-#cardz img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
-  height: 75px;
-	max-width: 100%;
-}
-
-#cardz section > * {
-	margin: 0.1rem;
-}
-
-#cardz h3 {
-	font-family: "Caveat", cursive;
-}
