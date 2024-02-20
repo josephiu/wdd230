@@ -511,3 +511,119 @@ form #signup {
   font-size:48px;color:red;
 
 }
+
+
+
+
+
+
+/* Toggle between grid and list */
+/* 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+/* main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #fff;
+	font-family: Roboto, Helvetica, sans-serif;
+} */
+
+/* .menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+} */
+/* 
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+} */
+
+#allSection {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.cardGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.carGrid section {
+	text-align: center;
+}
+
+.cardGrid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+  height: 75px;
+	max-width: 100%;
+}
+
+.cardGrid section > * {
+	margin: 0.1rem;
+}
+
+.cardGrid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.cardList {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardList section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.cardList section > * {
+	margin: 0 1rem;
+}
+
+.cardList section img {
+	display: none; /* smaller viewports only */
+}
+
+.cardList section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.cardList section:nth-child(even) {
+	background-color: #bed;
+}
+
+#allSection h3 {
+	font-size: 1.5rem;
+}
+
+#allSection p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+#allSection a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+.head img {
+	height: 75px;
+	max-width: 100%; 
+}

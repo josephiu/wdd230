@@ -3,9 +3,9 @@ const baseURL = "https://josephiu.github.io/wdd230";
 const linksURL = "https://josephiu.github.io/wdd230/data/members.json";
 
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const htmlcards= document.querySelector(".cards");
+const buttonGrid = document.querySelector("#grid");
+const buttonList= document.querySelector("#list");
+const htmlcards= document.querySelector("#cardz");
 
 
 //Calling the getMembersData function  in  async method using fetch
@@ -20,9 +20,9 @@ async function getMembersData() {
     const response = await fetch(linksURL);
     const data = await response.json(); 
     //refrencing the data object of the members array                                          
-    displayMembers(data);                                                                                     
+    displayMembers(data.companies);                                                                                     
 
-    console.log(data); // temporary testing of data retreival
+    console.log(data.companies); // temporary testing of data retreival
   
 }
   
@@ -30,46 +30,56 @@ getMembersData();
 
 
 //build a display cards for each item in our members array 
-const displayMembers = (members) => {
+ const displayMembers = (members) => {
 
-    members.forEach((member) => {       
-   
+    members.forEach((member) => {   
 
         let card = document.createElement("section");
 
-        // let cName = document.createElement("h4");
-        // let cLogo = document.createElement("img");
-        // let tele = document.createElement("p");
-        // let yeahJoin = document.createElement("p");
-        // let mLevel = document.createElement("p");
-        // let address = document.createElement("p");
-        // let web = document.createElement("A");
-
-
-
-
-        // "company_name": "Atlantic Amusements Inc. ",
-        // "address":    "95, Al fahidi Street, New City, Abu Dhabi, UAE" ,
-        // "phone_number": "+971 (0) 5 458 4194",
-        // "joinYear": "1988",
-        // "icon": "chamber/images/directory-image/atlantic.jpeg",
-        // "membershipLevel": "Gold",
-        // "website":"http://www.atlanticamusements.ie/"        
+        let cName = document.createElement("h4");
+        let cLogo = document.createElement("img");
+        let tele = document.createElement("p");
+        let yeahJoin = document.createElement("p");
+        let mLevel = document.createElement("p");
+        let address = document.createElement("p");
+        let web = document.createElement("p")
+        
 
 
         //  Build the h2 content out to show the member's 
-        cName.textContent = member.companies[0].company_name; 
 
+        cName.textContent = `${member.company_name}`; 
+        tele.textContent = `${member.phone_number}`;
+        yeahJoin.textContent = `Joined year: ${member.joinYear}`;
+        mLevel.textContent = `Membership level: ${member.membershipLevel}`;
+        address.textContent = `${member.address}`;
+
+
+
+
+        web.innerHTML = `<a href="${member.website}">${member.website}</a>`;
+
+
+        cLogo.setAttribute("src", member.icon);
+        cLogo.setAttribute("alt",`Logo of ${member.company_name}`);
+        cLogo.setAttribute('loading', 'lazy');
+        cLogo.setAttribute('width', '150');
+        cLogo.setAttribute('height', '150');
+
+
+
+
+        card.appendChild(cLogo);
         card.appendChild(cName);
-
-        htmlcards.appendChild(card);        
-    
-
-
-
-
+        card.appendChild(yeahJoin);
+        card.appendChild(mLevel);
+        card.appendChild(tele);
+        card.appendChild(address);
+        card.appendChild(web);
 
 
+
+        htmlcards.appendChild(card);       
     
     });
 
@@ -77,20 +87,20 @@ const displayMembers = (members) => {
 
 
 
+// The togle button.
 
-
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-// gridbutton.addEventListener("click", () => {
+buttonGrid.addEventListener("click", () => {
 // 	// example using arrow function
-// 	display.classList.add("grid");
-// 	display.classList.remove("list");
-// });
+    htmlcards.classList.add("cardGrid");
+    htmlcards.classList.remove("cardList");
+ });
 
-// listbutton.addEventListener("click", showList); // example using defined function
 
-// function showList() {
-// 	display.classList.add("list");
-// 	display.classList.remove("grid");
-// }
+ buttonList.addEventListener("click", () => {
+    // 	// example using arrow function
+    htmlcards.classList.add("cardList");
+    htmlcards.classList.remove("cardGrid");
+     });
+    
+
+
